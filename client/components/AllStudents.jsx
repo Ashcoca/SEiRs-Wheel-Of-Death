@@ -39,6 +39,7 @@ class AllStudents extends React.Component {
     }
   }
 
+  // Library fn that adds scrolling animation
   scrollToTop() {
     scroll.scrollToTop({ duration: 500 });
   }
@@ -50,7 +51,7 @@ class AllStudents extends React.Component {
     });
     this.setState({
       studentsToShow: 0,
-      currentDisplay: searchResults.slice(0, 12)
+      currentDisplay: searchResults.slice(0, 12),
     });
   }
 
