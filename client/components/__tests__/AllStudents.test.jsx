@@ -40,7 +40,7 @@ describe('Back Button', () => {
 
 describe('Next Button', () => {
   it('Should update state and render the next students', () => {
-    const wrapper = shallow(<AllStudents items={dummyData}/>);
+    const wrapper = shallow(<AllStudents items={dummyData}/>, { disableLifecycleMethods: true });
     wrapper.find('.btn-next').simulate('click');
     wrapper.update();
 
