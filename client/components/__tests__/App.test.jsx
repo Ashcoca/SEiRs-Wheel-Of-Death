@@ -4,6 +4,10 @@ import App from '../App.jsx';
 
 import dummyData from '../../../DB/dummyData.json';
 
+// Rename it blocks to be more agnostic
+// Make sure tests only test that component
+// Navigation component shouldn't be tested here, it should be in Navigation tests
+// Can test the function that's passed to navigation here tho
 
 describe('App Component', () => {
   const wrapper = render(<App />);

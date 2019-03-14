@@ -5,6 +5,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import StudentCard from './StudentCard.jsx';
 import Search from './Search.jsx';
 import SortSelector from './SortSelector.jsx';
+import ButtonIcon from './ButtonIcon.jsx';
 
 // Component to display all student data to be scrolled through
 // Could also allow for manual selection of students? Doubt it would ever be used, but it'd be nice to have the option I guess.
@@ -78,6 +79,7 @@ class AllStudents extends React.Component {
     return (
     <div className = "all-container">
       <div className = "floating-container">
+        {/* <ButtonIcon classAndIconName={['home', 'btn-home'].join(' ')} onClick={onClose} title={'Home'}/> */}
         <i className={['fas fa-home', 'btn-home'].join(' ')} onClick={onClose} title="Home"></i>
         <Search search={this.searchStudents}/>
         <i className={['fas fa-arrow-circle-right', 'btn-next'].join(' ')} onClick={this.nextTenStudents} title="Next 12 Results"></i>

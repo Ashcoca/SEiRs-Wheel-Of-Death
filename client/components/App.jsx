@@ -6,6 +6,12 @@ import Spinner from './Spinner.jsx';
 import Navigation from './Navigation.jsx';
 import replacementPic from '../data.jsx';
 
+// Notes
+// Want to add React Router to try it out and to replace view state to declutter state
+// Tentative routes (will reassess if it conflicts with server routes)
+// Home -> /
+// Card -> /student/:id
+// All -> /students
 
 class App extends React.Component {
   constructor(props) {
